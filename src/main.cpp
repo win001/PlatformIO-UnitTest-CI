@@ -34,11 +34,11 @@ void setup() {
 
 void loop() {
 
-    currentMillis = millis();
-    if (currentMillis - previousMillis >= interval) {
-        previousMillis = currentMillis;
-        bool ledState = led->digitalRead();
-        led->digitalWrite(!ledState);
-    }
+    // currentMillis = millis();
+    // if (currentMillis - previousMillis >= interval) {
+    //     previousMillis = currentMillis;
+    //     bool ledState = led->digitalRead();
+    //     led->digitalWrite(!ledState);
+    // }
     server->handleClient();
 }
