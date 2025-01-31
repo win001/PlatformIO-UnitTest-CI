@@ -45,6 +45,6 @@ jobs:
     #   run: platformio test -e native
     - name: Run tests on the embedded target
       env:
-        PTIO_AUTH_KEY: ${{ secrets.PTIO_AUTH_KEY }}
+        PLATFORMIO_AUTH_TOKEN: ${{ secrets.PTIO_AUTH_KEY }}
       run: platformio remote test -e esp32 -f test_gpio -vvv
       
